@@ -31,7 +31,7 @@ Follow these steps to set up the project locally:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/USERNAME/REPO.git](https://github.com/Vanshdalal314/SyncNote)
+git clone https://github.com/Vanshdalal314/SyncNote
 ````
 
 ### 2. Navigate to the project folder
