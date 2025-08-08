@@ -31,7 +31,7 @@ Follow these steps to set up the project locally:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/USERNAME/REPO.git
+git clone [https://github.com/USERNAME/REPO.git](https://github.com/Vanshdalal314/SyncNote)
 ````
 
 ### 2. Navigate to the project folder
@@ -87,6 +87,3 @@ SyncNote/
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
-If you want, I can also **add a short tagline and banner image** at the top so the GitHub page looks even more professional and recruiter-friendly. That way, `SyncNote` will feel like a polished product.
-```
