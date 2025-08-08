@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# SyncNote
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SyncNote is a full-stack notes management application that allows users to create, edit, and delete personal notes securely.  
+It is built with a **React.js frontend** and a **Node.js/Express backend**, with **MongoDB** as the database.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication** – Secure login and signup with JWT-based authentication.
+- **CRUD Notes** – Create, read, update, and delete your personal notes.
+- **Responsive UI** – Built with Bootstrap for mobile-friendly design.
+- **Password Validation** – Minimum length & confirm password check.
+- **Concurrent Development** – Run frontend and backend together using a single command.
 
-### `npm start`
+## Technology Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Frontend**:
+- React.js
+- Bootstrap 5
+- Context API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Backend**:
+- Node.js
+- Express.js
+- MongoDB + Mongoose
+- JWT Authentication
+- Bcrypt.js for password hashing
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to set up the project locally:
 
-### `npm run build`
+### 1. Clone the repository
+```bash
+git clone https://github.com/USERNAME/REPO.git
+````
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Navigate to the project folder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd SyncNote
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Install dependencies
 
-### `npm run eject`
+```bash
+npm install            # Install frontend dependencies
+cd backend && npm install  # Install backend dependencies
+cd ..
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Configure environment variables
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Create a `.env` file inside the `backend` folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```env
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. Run the application
 
-## Learn More
+To start both the frontend and backend together:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run both
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 6. Available Scripts
 
-### Code Splitting
+* `npm start` – Runs the frontend React app only
+* `npm run backend` – Runs the backend server only
+* `npm run both` – Runs both frontend & backend concurrently
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Folder Structure
 
-### Analyzing the Bundle Size
+```
+SyncNote/
+│
+├── backend/         # Backend API (routes, models, middleware, database connection)
+├── src/             # React frontend components & context
+├── public/          # Static files for React
+├── package.json     # Project metadata & scripts
+├── .gitignore       # Ignored files for Git
+└── README.md        # Project documentation
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is open-source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you want, I can also **add a short tagline and banner image** at the top so the GitHub page looks even more professional and recruiter-friendly. That way, `SyncNote` will feel like a polished product.
+```
