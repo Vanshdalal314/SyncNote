@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.description-text {
+  max-height: 4.5rem; /* Adjust as needed (e.g., 3 lines) */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+.title-text {
+  max-height: 4.5rem; /* Adjust as needed (e.g., 3 lines) */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
+html, body {
+  overflow-y: scroll;
+  scrollbar-width: none;         /* Firefox */
+  -ms-overflow-style: none;      /* IE 10+ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari, Edge */
+}
