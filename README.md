@@ -83,7 +83,3 @@ SyncNote/
 ├── .gitignore       # Ignored files for Git
 └── README.md        # Project documentation
 ```
-
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
